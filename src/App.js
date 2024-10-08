@@ -1,6 +1,12 @@
 import React from "react";
 import Carousel from "./component/slider/Slider";
-import SecondCont from "./component/slider/FirstSlider"
+import SecondCont from "./component/slider/FirstSlider";
+import Header from "./component/header/Header";
+import Footer from "./component/footer/Footer";
+import FAQSection from "./component/FAQ/Faq";
+import Content from "./component/content/Content";
+import Subscribe from "./component/subscibe/Subscribe";
+import Examdate from "./component/examdate/Examdate"
 
 const App = () => {
   const slides = [
@@ -56,10 +62,14 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header/>
       <SecondCont slides ={firstSlides}/>
-      {/* <h1>Carousel with Reusable Container</h1> */}
+      <Examdate/>
       <Carousel slides={slides} />
-
+      <Content/>
+      <FAQSection/>
+      <Subscribe/>
+      <Footer/>
     </div>
   );
 };

@@ -9,9 +9,9 @@
 .carousel {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 1440px;
-  margin: auto;
+  width: 87%;
+  /* max-width: 1440px; */
+  margin: 40px auto;
   user-select: none;
 }
 
@@ -116,7 +116,7 @@
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  padding-left: 100px;
+  padding-left: 7.5%;
 }
 .sectionLeft h4{
   font-size: 32px;
@@ -270,6 +270,9 @@
   }
 }
 @media (max-width: 767px) {
+  .carousel {
+    margin: 20px auto;
+  }
   .sectionLeft p {
     font-size: 12px;
     width: 100%;
@@ -278,6 +281,9 @@
   }
   .sectionLeft {
     padding: 25px 20px 30px 14px;
+    width: 100%;
+  }
+  .carousel {
     width: 100%;
   }
   .carousel-content p {

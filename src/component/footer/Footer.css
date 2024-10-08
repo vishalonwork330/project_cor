@@ -1,0 +1,249 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    /* padding: 40px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 460px;
+}
+
+.footer-container {
+    width: 100%;
+    background-image: url(../../img/footerImg.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0 0 ;
+    height: 85%;
+}
+.footerContainerInner {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    /* margin: 20px; */
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+
+.social-links li{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.contact-links li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 36px;
+    list-style: none;
+}
+.social-links li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.social-links li a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.head-officeBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.head-officeBox li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.head-officeBox li p{
+    font-size: 16px;
+    line-height: 25px;
+}
+.head-imgBox {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    display: inline-block;
+}
+.head-imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #092957;
+}
+
+@media (max-width: 1200px) {
+    .contact-links li {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .social-links {
+        gap: 20px;
+    }
+    .head-officeBox li p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: start;
+    }
+    .footer-section h3 {
+        font-size: 24px;
+    }
+    .footerContainerInner {
+        width: 92%;
+    }
+}
+@media (max-width: 991px) {
+    .footerContainerInner {
+        width: 96%;
+        flex-wrap: wrap;
+    }
+    .contact-links li {
+        font-size: 12px;
+        line-height: 22px;
+        text-align: start;
+    }
+    .links {
+        max-width: 150px;
+        min-width: 100px;
+    }
+    .social-links {
+        gap: 10px;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .head-officeBox li p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .footer-section h3 {
+        margin-bottom: 15px;
+    }
+    .footer-container {
+        height: 88%;
+    }
+    .footer-bottom {
+        height: 12%;
+    }
+}
+@media (max-width: 768px) {
+    .social-links li {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .footerContainerInner {
+        gap: 15px;
+    }
+    .footer-bottom p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 10px 10px 0;
+    }
+    .footer {
+        height: 520px;
+    }
+    .links {
+        max-width: 100%;
+        width: 100%;
+    }
+    .head-officeBox li p {
+        line-height: 18px;
+        font-size: 11px;
+    }
+    .contact-links li {
+        font-size: 11px;
+    }
+    .social-links {
+        gap: 20px;
+    }
+    .head-officeBox li {
+        gap: 6px;
+    }
+    .footerContainerInner {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,175 @@
+.subs-container {
+    font-size: 33px;
+    font-weight: 700;
+    /* margin-bottom: 20px; */
+    color: #12406F;
+    padding: 20px 0 0;
+}
+
+.subsInner-box {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.single-subsSet {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+    /* margin-bottom: 20px; */
+}
+
+.single-subsSet h2 {
+    font-size: 33px;
+    color: #12406F;
+    padding-top: 30px;
+}
+
+.single-subsSet p {
+    font-size: 15px;
+    color: #525252;
+    margin: 10px 0;
+    font-weight: 400;
+    width: 72%;
+}
+
+.subs-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.subs-detailBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.inputBox {
+    border: 1px solid #949494;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 10px;
+    padding: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputBox input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.subs-submitBtn {
+    background-color: #12406F;
+    color: #fff;
+    padding: 14px 25px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.subs-submitBtn span {
+    width: 12px;
+    display: flex;
+    height: 12px;
+    border-radius: 18px;
+}
+
+.subs-submitBtn img {
+    width: 12px;
+    height: 12px;
+}
+
+@media (max-width: 1200px) {
+    .single-subsSet h2 {
+        padding-top: 0;
+    }
+    .single-subsSet p {
+        font-size: 14px;
+        width: 100%;
+    }
+    .subs-container {
+        padding: 0;
+    }
+}
+@media (max-width: 991px) {
+    .single-subsSet h2 {
+        font-size: 26px;
+    }
+    .single-subsSet p {
+        font-size: 12px;
+        width: 100%;
+        margin: 6px 0;
+    }
+    .subs-submitBtn {
+        padding: 9px 18px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+    .inputBox {
+        padding: 6px 10px;
+        border-radius: 8px;
+    }
+    .subs-submitBtn span {
+        width: 8px;
+        display: flex;
+        height: 8px;
+    }
+    
+    .subs-submitBtn img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .imgSet-sub {
+        display: none;
+    }
+    .subsInner-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .single-subsSet {
+        flex: 1 1 100%;
+    }
+
+    .subs-container {
+        font-size: 24px;
+        padding: 10px 15px 30px;
+    }
+
+    .subs-submitBtn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subs-container {
+        font-size: 20px;
+    }
+
+    .subs-submitBtn {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+
+    .subs-img {
+        max-width: 100%;
+    }
+}
